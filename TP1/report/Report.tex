@@ -92,11 +92,11 @@ O programa tem que cumprir os seguintes requisitos:
 Para a implementação deste sistema, foram criados três predicados para
 representar a informação do sistema
 \begin{itemize}
-    \item adjudicante: NifAd, Nome, Morada -> \{V, F, D\};
-    \item adjudicária: NifAda, Nome, Morada -> \{V, F, D\};
+    \item adjudicante: NifAd, Nome, Morada $\rightarrow$ \{V, F, D\};
+    \item adjudicária: NifAda, Nome, Morada $\rightarrow$ \{V, F, D\};
     \item contrato: \#Id, NifAd, NifAda, TipoDeContrato,
-        TipoDeProcedimento, Descrição, Valor, Prazo, Local, Dia, Mês, Ano ->
-        \{V, F, D\};
+        TipoDeProcedimento, Descrição, Valor, Prazo, Local, Dia, Mês, Ano 
+        $\rightarrow$ \{V, F, D\};
 \end{itemize}
 
 Como estamos perante um contexto de lógica estendida, os predicados podem ter
@@ -122,6 +122,7 @@ contrato(1, 600000003, 500000000, "Aquisicao de servicos", cprev,
     "Assessoria juridica", 1000000, 346, porto, 10, 10, 2010).
 \end{verbatim}
 
+\pagebreak
 \subsection{Conhecimento Negativo}
 Com a presença de conhecimento imperfeito, faz sentido a introdução de
 conhecimento negativo. Este pode ser obtido representado através de duas formas,
