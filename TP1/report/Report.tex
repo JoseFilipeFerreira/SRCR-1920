@@ -23,7 +23,7 @@ linkcolor=black}
 
 \title{Programação em lógica estendida e Conhecimento imperfeito \\
 \large Grupo 7}
-\author{Joao Teixeira (A85504) \and Jose Filipe Ferreira (A83683) \and Miguel
+\author{João Teixeira (A85504) \and Jose Filipe Ferreira (A83683) \and Miguel
 Solino (A86435)}
 \date{\today}
 
@@ -63,11 +63,11 @@ Para a realização deste trabalho utilizamos a linguagem de programação em l�
 lecionada nesta UC, \textit{Prolog}.
 
 Em primeiro lugar, iremos apresentar em detalhe o problema proposto, identificar
-os requisitos e que funcionaliades implementar para responder aos requisitos
+os requisitos e que funcionalidades implementar para responder aos requisitos
 determinados.
 
 De seguida explicaremos a solução encontrada para este problema, entrando em
-detalhe sobre as representaçoes de conhecimento escolhidas, diversos
+detalhe sobre as representações de conhecimento escolhidas, diversos
 invariantes, como é efetuada a evolução e regressão do conhecimento, entre
 outros, entre outros..
 
@@ -177,13 +177,13 @@ incertoNome(adjudicataria(500000003), incerto).
 
 \subsection{Conhecimento Imperfeito Impreciso}
 O conhecimento imperfeito impreciso consiste no conhecimento desconhecido dentro
-de um conjunto finito de hipoteses. Para a representação deste fazemos a
-inserção de exceçoes com as diversas hipoteses, inserimos também o facto do Id
+de um conjunto finito de hipóteses. Para a representação deste fazemos a
+inserção de exceções com as diversas hipóteses, inserimos também o facto do Id
 corresponder a conhecimento impreciso.
 
 No exemplo abaixo podemos ver a representação do adjudicante com Nif 600000005,
 e sede em Lisboa, o qual não sabemos se corresponde aos Bombeiros ou ao
-Exercíto.
+Exercito.
 
 \begin{verbatim}
 excecao(adjudicante(600000005, exercito, lisboa)).
@@ -224,11 +224,11 @@ interditoAda(contrato(5), interdito).
 
 \subsection{Evolução do conhecimento perfeito}
 
-Para a evolução do conhecimento perfeito temos duas hipoteses, quando já existe
+Para a evolução do conhecimento perfeito temos duas hipóteses, quando já existe
 conhecimento imperfeito referente ao predicado em questão na base de
 conhecimento, ou quando é a primeira informação que inserimos sobre o predicado.
 
-Na primeira hipotese, para a atualização do conhecimento imperfeito, primeiro é
+Na primeira hipótese, para a atualização do conhecimento imperfeito, primeiro é
 verificado se existe informação sobre conhecimento interdito, que como não é
 possível saber, não é possível atualizar este predicado. Caso não exista
 referência a conhecimento interdito, é removido o conhecimento imperfeito e
@@ -244,7 +244,7 @@ evolucao(adjudicante(Nif, Nome, Morada)) :-
 \end{verbatim}
 
 Caso não haja informação presente para o predicado a adicionar, é apenas feita a
-inserção na base de conhecimento, como visivel abaixo.
+inserção na base de conhecimento, como visível abaixo.
 
 \begin{verbatim}
 evolucao(Termo) :-
@@ -255,15 +255,15 @@ evolucao(Termo) :-
 \subsection{Evolução do conhecimento imperfeito Impreciso}
 
 A evolução deste tipo de conhecimento é efetuada recebendo uma lista com as
-hipoteses possíveis, sendo verificado se é fornecido uma lista com mais do que
+hipóteses possíveis, sendo verificado se é fornecido uma lista com mais do que
 um elemento, se todos os elementos da lista correspondem ao mesmo Id, com o
 predicado \textit{mesmoNif}, se nenhum representa conhecimento 
 anteriormente declarado como perfeito, com o predicado
-\textit{nenhumPerfeito}, e só assim são inseridas as exceçoes 
+\textit{nenhumPerfeito}, e só assim são inseridas as exceções 
 correspondentes ao conhecimento fornecido, através do predicado
 \textit{insereExcecoes}.
 
-Como exemplo, incluimos o predicado responsável pela evolução do predicados
+Como exemplo, incluímos o predicado responsável pela evolução do predicados
 correspondentes a adjudicatárias.
 
 \begin{verbatim}
@@ -325,7 +325,7 @@ A regressão de conhecimento imperfeito é efetuada, verificando se o predicado
 existe, no caso de conhecimento incerto, ou se a exceção correspondente, no caso
 de conhecimento impreciso. Depois desta verificação, são encontrados todos os
 invariantes que se aplicam, e depois removido o conhecimento e testado se os
-invariantes ainda são respeitados. Caso não sejam, as alteraçoes são revertidas.
+invariantes ainda são respeitados. Caso não sejam, as alterações são revertidas.
 
 \chapter{Sistema de inferência}
 
@@ -344,7 +344,7 @@ demo( Questao,desconhecido ) :-
 \end{verbatim}
 
 Aqui, caso o predicado seja verdadeiro, irá responder verdadeiro, se o predicado
-for falso, ou seja, ser negado explícitamente, ou não haver informação que o
+for falso, ou seja, ser negado explicitamente, ou não haver informação que o
 prove, a resposta será falsa, e se existir conhecimento imperfeito sobre o
 predicado a avaliar, retornará desconhecido.
 
@@ -422,7 +422,7 @@ De forma a garantir que todos os contratos seguem os termos legais impostos, foi
 implementado um invariante para validar todas as regras, que possui uma data
 válida e o tipo de procedimento é válido. Para isso foi implementado o predicado
 \textit{checkContract}, e o invariante verifica que não há nenhum contrato que
-não verifique as condiçoes.
+não verifique as condições.
 
 \begin{verbatim}
 +contrato(_, _, _, _, _, _, _, _, _, _, _, _) 
