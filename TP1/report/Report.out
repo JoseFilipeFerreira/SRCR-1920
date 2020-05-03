@@ -1,0 +1,24 @@
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Problema}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Solu\347\343o}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Predicados Implementados}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Representa\347\343o do conhecimento}{chapter.3}% 5
+\BOOKMARK [2][-]{subsection.3.2.1}{Conhecimento Positivo}{section.3.2}% 6
+\BOOKMARK [2][-]{subsection.3.2.2}{Conhecimento Negativo}{section.3.2}% 7
+\BOOKMARK [2][-]{subsection.3.2.3}{Conhecimento Imperfeito Incerto}{section.3.2}% 8
+\BOOKMARK [2][-]{subsection.3.2.4}{Conhecimento Imperfeito Impreciso}{section.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.2.5}{Conhecimento Imperfeito Interdito}{section.3.2}% 10
+\BOOKMARK [1][-]{section.3.3}{Evolu\347\343o do conhecimento}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.3.1}{Evolu\347\343o do conhecimento perfeito}{section.3.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.2}{Evolu\347\343o do conhecimento imperfeito Impreciso}{section.3.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.3}{Evolu\347\343o do conhecimento imperfeito Incerto}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.4}{Evolu\347\343o do conhecimento imperfeito Interdito}{section.3.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Regress\343o do conhecimento}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.4.1}{Regress\343o de conhecimento perfeito}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.2}{Regress\343o do conhecimento Imperfeito}{section.3.4}% 18
+\BOOKMARK [0][-]{chapter.4}{Sistema de infer\352ncia}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Invariantes}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Inser\347\343o e Remo\347\343o de conhecimento}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.2}{Regra dos tr\352s anos}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.3}{Regras gerais de Contratos}{section.4.1}% 23
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o}{}% 24

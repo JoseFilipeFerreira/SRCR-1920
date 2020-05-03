@@ -78,21 +78,13 @@ insereExcecoes([adjudicataria(Nif, N, M) | R]) :-
 evolucaoImpreciso([adjudicante(Nif, N, M) | R]) :-
 	R \= [],
 	mesmoNif(R, Nif),
-	nenhumPerfeito([adjudicante(Nif, N, M) | R]),
+	nenhumVerdadeiro([adjudicante(Nif, N, M) | R]),
 	insereExcecoes([adjudicante(Nif, N, M) | R]).
 
 mesmoNif([], _).
 mesmoNif([adjudicante(Nif, _, _) | R], Nif1) :-
 	Nif == Nif1,
     mesmoNif(R, Nif1).
-
-nenhumPerfeito([]).
-nenhumPerfeito([X|Xs]) :-
-	demo(X,falso),
-	nenhumPerfeito(Xs).
-nenhumPerfeito([X|Xs]) :-
-	demo(X,desconhecido),
-	nenhumPerfeito(Xs).
 
 insereExcecoes([]).
 insereExcecoes([adjudicante(Nif, N, M) | R]) :-
